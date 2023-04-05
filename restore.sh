@@ -117,3 +117,5 @@ if [ ! -z "${REMOVE_BACKUP_ON_TERMINATE}" ]
 then
     rm -rf "${UNENCRYPTED_BACKUP_PATHNAME}"
 fi
+
+exit 0
