@@ -28,7 +28,7 @@ fi
 
 # Importamos la configuración
 
-SCRIPT_FOLDER=`dirname ${0}`
+SCRIPT_FOLDER=`dirname ${BASH_SOURCE}`
 
 . "${SCRIPT_FOLDER}/vaultwarden.conf"
 
