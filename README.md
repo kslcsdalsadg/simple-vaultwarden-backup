@@ -1,6 +1,6 @@
 # simple-vaultwarden-backup
 
-Una forma fácil de hacer backups de su bóbeda vaultwarden.
+Una forma fácil de hacer backups de su bóveda vaultwarden.
 
 Para empezar, edite el archivo vaultwarden.conf y establezca sus propias preferencias, incluyendo
 los parámetros obligatorios:
