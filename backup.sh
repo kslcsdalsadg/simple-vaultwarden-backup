@@ -121,7 +121,7 @@ then
     if [ "${CHECK_ENCRYPTED_FILE}" = "1" ]
     then
 
-        TEMPORARY_UNENCRYPTED_BACKUP_PATHNAME="${ENCRYPTED_BACKUP_PATHNAME}.test"
+        TEMPORARY_UNENCRYPTED_BACKUP_PATHNAME="/tmp/vaultwarden-backup-unencrypted-${BACKUP_TIMESTAMP}"
 
         echo "${ENCRYPTION_PASSPHRASE}" | gpg -d --pinentry-mode "loopback" --cipher-algo "${ENCRYPTION_CIPHER_ALGORITHM}" --passphrase-fd 0 "${ENCRYPTED_BACKUP_PATHNAME}" > "${TEMPORARY_UNENCRYPTED_BACKUP_PATHNAME}" 
 
