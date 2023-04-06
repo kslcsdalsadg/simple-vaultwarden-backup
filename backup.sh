@@ -6,7 +6,9 @@ set -e
 
 # Comprobamos que el usuario que ejecuta el script es root
 
-if [ "${EUID}" -ne 0 ]
+whoami=`whoami`
+
+if [ "${whoami}" != "root" ]
 then 
     echo "Este script lo tiene que ejecutar el usuario 'root'..."
     exit 1
