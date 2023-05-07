@@ -72,7 +72,7 @@ REMOVE_BACKUP_ON_TERMINATE=""
 if [ "${extension}" = "gpg" ]
 then
     BACKUP_TIMESTAMP_SUFFIX="$(date '+%Y%m%d-%H%M')"
-    UNENCRYPTED_BACKUP_PATHNAME="/tmp/vaultwarden-restore-${BACKUP_TIMESTAMP}"
+    UNENCRYPTED_BACKUP_PATHNAME="/tmp/vaultwarden-restore-${BACKUP_TIMESTAMP_SUFFIX}"
     REMOVE_BACKUP_ON_TERMINATE="1"
     
     if [ -e "${UNENCRYPTED_BACKUP_PATHNAME}" ]

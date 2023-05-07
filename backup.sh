@@ -37,7 +37,7 @@ mkdir -p "${BACKUPS_ROOT}"
 BACKUP_TIMESTAMP_SUFFIX="$(date '+%Y%m%d-%H%M')"
 BACKUP_FILENAME="vaultwarden-${BACKUP_TIMESTAMP_SUFFIX}.tar.xz"
 BACKUP_PATHNAME="${BACKUPS_ROOT}/${BACKUP_FILENAME}"
-BACKUP_WORKING_FOLDER="/tmp/vaultwarden-backup-${BACKUP_TIMESTAMP}"
+BACKUP_WORKING_FOLDER="/tmp/vaultwarden-backup-${BACKUP_TIMESTAMP_SUFFIX}"
 
 # Creamos el directorio de trabajo (en el improbable caso de que ya exista, salimos con un error)
 
